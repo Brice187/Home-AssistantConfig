@@ -1,0 +1,25 @@
+- id: katharina_at_home
+  alias: Katharina komm nacht Hause
+  trigger:
+  - platform: state
+    entity_id:
+    - device_tracker.android9f25395bdec83551
+    from: not_home
+    to: home
+  action:
+    service: notify.telegram
+    data:
+      message: Katharina ist nach Hause gekommen.
+
+- id: besuch_alex
+  alias: Alexandra kommt zu Besuch
+  trigger:
+  - platform: state
+    entity_id: 
+     - device_tracker.alexandasiphone
+    from: not_home
+    to: home
+  action:
+    service: notify.telegram
+    data:
+      message: Alexandra ist zu Besuch

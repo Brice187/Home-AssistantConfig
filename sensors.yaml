@@ -1,0 +1,8 @@
+  - platform: yr #wetter
+  - platform: pi_hole
+    host: 192.168.7.5
+  - platform: fritzbox_netmonitor
+    host: 192.168.7.1
+  - platform: deutsche_bahn
+    from: Menden(Rheinl)
+    to: Bonn Gronau Olof-Palme-Allee #Bonn-ObBonn Gronau Olof-Palme-Alleeel
